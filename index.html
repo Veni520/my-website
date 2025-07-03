@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Explore Sri Lankan Mountains</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body onload="showGreeting()">
+<div class="greeting-box">
+  <button onclick="askName()" class="welcome-btn">Get Personalized Greeting</button>
+  <p id="greeting"></p>
+</div>
+
+
+  <header>
+    <nav>
+      <ul class="navbar">
+        <li><a href="#">Home</a></li>
+        <li><a href="#destination">Destination</a></li>
+
+        <li><a href="#gallery">Gallery</a></li>
+
+        <li><a href="about.html">About Us</a></li>
+       
+        <li><a href="login.html" class="login-btn">Login</a></li>
+
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1 id="greeting">Welcome to Mountain Trails - Sri Lanka</h1>
+    <p>Explore the misty peaks and nature's wonders</p>
+  </section>
+
+  <section class="images" id="gallery">
+  <h2>Top 5 Mountain Views</h2>
+
+    <div class="gallery">
+      <img src="https://th.bing.com/th/id/OIP.Dnq5LTSnsGPNZqMvAN_8nQHaFB?w=231&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" alt="Adam's Peak"/>
+      <img src="https://th.bing.com/th/id/OIP.IZfW73S7CPwVKSmyEf01DAHaEh?w=302&h=184&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" alt="Knuckles Range"/>
+      <img src="https://th.bing.com/th/id/OIP.ivdUuR3B_gYLpE-hlKE2GgHaE8?w=261&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" alt="Pidurutalagala"/>
+      <img src="https://th.bing.com/th/id/OIP.6K3pl-T-zoK5iplizEe1_AHaD2?w=284&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" alt="Hanthana Range"/>
+      <img src="https://th.bing.com/th/id/OIP.XOwisEqBGBRE3oJ1kCpCPwHaEK?w=290&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" alt="Ella Rock"/>
+    </div>
+  </section>
+
+  <section class="why-visit" id="destination">
+  <h2>Why Visit Sri Lankan Mountains?</h2>
+
+    <ul>
+      <li>Fresh air and greenery</li>
+      <li>Scenic hiking trails</li>
+      <li>Cultural & religious value</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Popular Mountains</h2>
+    <table>
+      <tr>
+        <th>Mountain</th>
+        <th>Height (m)</th>
+        <th>Location</th>
+      </tr>
+      <tr>
+        <td>Pidurutalagala</td>
+        <td>2,524</td>
+        <td>Nuwara Eliya</td>
+      </tr>
+      <tr>
+        <td>Adam's Peak</td>
+        <td>2,243</td>
+        <td>Ratnapura</td>
+      </tr>
+      <tr>
+        <td>Knuckles Range</td>
+        <td>1,863</td>
+        <td>Kandy</td>
+      </tr>
+    </table>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Mountain Trails | <a href="#">Contact Us</a></p>
+  </footer>
+
+  <script>
+    function showGreeting() {
+      const greeting = document.getElementById("greeting");
+      const hour = new Date().getHours();
+      greeting.innerText = hour < 12 ? "Good Morning! Welcome to Mountain Trails"
+        : hour < 18 ? "Good Afternoon! Explore Sri Lankan Peaks"
+        : "Good Evening! Discover Mountain Magic";
+    }
+  </script>
+  <script>
+  function askName() {
+    const name = prompt("What's your name?");
+    if (name) {
+      document.getElementById("greeting").innerText = "Welcome, " + name + "! Enjoy exploring Sri Lanka's mountains.";
+    } else {
+      document.getElementById("greeting").innerText = "Welcome, traveler!";
+    }
+  }
+</script>
+
+
+</body>
+</html>

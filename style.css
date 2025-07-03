@@ -1,0 +1,112 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: url('https://th.bing.com/th/id/OIP.i8q_1cyTK9BUFEN72ETrrgHaEv?w=278&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3') no-repeat center center fixed;
+  background-size: cover;
+  color: #cceeff;
+}
+
+header {
+  background-color: rgba(0, 0, 50, 0.8);
+  padding: 10px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar a {
+  color: #cceeff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.navbar a:hover {
+  color: #66d9ff;
+}
+
+.hero {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: rgba(0, 0, 70, 0.6);
+  animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+.images, section {
+  background-color: rgba(0, 0, 70, 0.7);
+  padding: 20px;
+  margin: 20px;
+  border-radius: 10px;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.gallery img {
+  border-radius: 8px;
+  width: 200px;
+  height: 120px;
+  object-fit: cover;
+}
+
+ul {
+  list-style: square;
+  padding-left: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  color: #fff;
+}
+
+table, th, td {
+  border: 1px solid #cceeff;
+}
+
+th, td {
+  padding: 10px;
+  text-align: center;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: rgba(0, 0, 50, 0.9);
+  color: #cceeff;
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+  }
+  .gallery {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.greeting-box {
+  text-align: center;
+  margin-top: 20px;
+  color: #66d9ff;
+  font-size: 1.2rem;
+}
+
